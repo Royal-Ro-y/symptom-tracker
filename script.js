@@ -9,7 +9,7 @@ doc
 const symptomInput = document.getElementById("symptomInput");
 const symptomList = document.getElementById("symptomList");
 async function saveSymptom() {
-const symptom = symptomInput.ariaValueMax.trim();
+const symptom = symptomInput.value.trim();
 if (symptom === "") {
 alert("PLease enter a symptom");
 return;
