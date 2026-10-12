@@ -11,9 +11,11 @@ margin: 0 auto;
 background-color: white;
 padding: 30px;
 border-radius: 10px;
+box-shadow: 0 5px 5px rgba(243, 4, 4, 0.525);
 }
 h1 {
 margin-bottom: 10px;
+color: rgba(243, 4, 4, 0.93);
 }
 .form {
 display: flex;
@@ -29,6 +31,11 @@ button {
 padding: 12px 20px;
 font-size: 16px;
 cursor: pointer;
+background-color: #e87f08;
+color: black;
+border: none;
+border-radius: 10px;
+
 }
 ul {
 padding-left: 20px;
@@ -37,10 +44,32 @@ li {
 margin-bottom: 10px;
 position: relative;
 padding-right: 80px;
+background-color: #e87f0876;
+border-radius: 6px;
+list-style: none;
 }
 li button {
 padding: 5px 10px;
 position: absolute;
 right: 0;
-top: 0;
+top: -5px;
+background-color: rgba(243, 4, 4, 0);
+color: black;
+border: none;
+border-radius: 4px;
+}
+
+li button:hover {
+  background-color: #c62828;
+  color: white;
+}
+
+.form button {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #c62828;
+  color: white;
+  transform: translateY(-2px);
 }
